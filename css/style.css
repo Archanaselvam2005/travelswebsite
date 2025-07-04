@@ -1,0 +1,147 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-bar {
+  background-color: #001f54;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.top-bar i {
+  margin-right: 5px;
+}
+
+.hero {
+  background-color: #001f54;
+  color: white;
+  padding: 60px 20px;
+  border: 3px solid #fbb911;
+  margin-top: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 span {
+  color: #fbb911;
+  font-weight: bold;
+}
+
+.hero-btn {
+  background: linear-gradient(to right, #0056b3, #000000);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  z-index: 9999;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+    right: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.call-float {
+	position: fixed;
+ 
+  z-index: 9999;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  bottom:120px;
+  right: 18px;
+  background-color: #007bff;
+  color: white;
+}
+
+
+.why-choose-section {
+  background: linear-gradient(to bottom, #091a48 0%, #468ef7 100%);
+  border-radius: 0 0 20px 20px;
+}
+
+.why-choose-section .card {
+  border-radius: 12px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+ .card:hover {
+  transform: translateY(-5px);
+}
+
+.circle-icon {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #f9cc00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section {
+
+background: #0d1b4c url('img/image.png') center/cover no-repeat;
+  background-blend-mode: darken;
+}
+.footer-section ul li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+.footer-section i {
+  color: yellow;
+}
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.badge.bg-light {
+  color: black !important;
+}
+
+.head{
+     border-radius: 20px 20px 0px 0px; 
+}
+.form{
+   display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+       border-radius: 20px;
+}
+
+.local-form input::placeholder{
+       color: white;
+}
+.local-form textarea::placeholder{
+       color: white;
+}
+.local-form  input,.local-form  textarea,.outstation-form input,.outstation-form select  ,.local-form select{
+    background-color: #0F1A2C;
+    color: white;
+    padding:5px;
+}
+ @media (max-width: 996px) {
+.hero{
+    height: 120vh;
+}
+  
+  }
