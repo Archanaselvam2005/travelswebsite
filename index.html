@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RANIAMMA TRAVELS
+</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+  <!-- 🔹 Top Contact Info Bar -->
+
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#index.php">RANIAMMA TRAVELS
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-bold">
+          <li class="nav-item"><a class="nav-link active" href="#index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#tariff">Tariff</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+          <li class="nav-item"> <a href="tel:+919965109712" class="btn " style="border-radius: 30px; background-color:#fbb911; color:#0F1A2C;height: auto ;width: fit-content;">+919965109712</a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center text-md-start">
+          <h1 class="mb-4">Discover Unforgettable <br> Journeys with <span>RANIAMMA TRAVELS
+</span></h1>
+          <p class="mb-4">Discover iconic landmarks with our personalized travel packages.</p>
+          <button class="hero-btn">
+            Book Now <i class="bi bi-arrow-down-circle-fill"></i>
+          </button>
+          <a href="tel:+919965109712" class="btn m-4" style="border-radius: 30px; background-color:#fbb911; color:#0F1A2C;height: auto ;width: fit-content;">+919965109712</a>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5">
+ <div class="local-form" id="localForm">
+    <div class="head d-flex flex-column align-items-center p-3 text-white w-100" style="background-color: #0F1A2C;">
+      <h2 style="color: wheat;"><i class="bi bi-car-front" style="color: #fbb911;"></i> Book Your Ride</h2>
+      <p style="color: rgb(208, 195, 169);">Choose your journey type below</p>
+    </div>
+
+    <div class="but d-flex justify-content-around p-3 w-100" style="background-color: rgb(221, 202, 179);">
+      <button class="btn btn-warning" id="localBtn" style="border-radius: 30px;color: #1d2b53;"><i class="bi bi-clock"></i> Local/Rental</button>
+            <button class="btn btn-warning" id="outstationBtn">    <i class="bi bi-geo-alt-fill"></i> Outstation Services</button>
+
+    </div>
+
+<form action="" method="post">
+      <div class="form-body bg-light   text-white p-4">
+        <input type="text" placeholder="Enter Full Name" class="form-control mb-3" name="name">
+        <input type="text" placeholder="Enter Mobile Number" class="form-control mb-3" name="mno">
+        <input type="text" placeholder="Pick-Up Location" class="form-control mb-3" name="pickup">
+        <input type="text" placeholder="Drop-up Location" class="form-control mb-3" name="droplo">
+
+        <div class="d-flex justify-content-between mb-3">
+          <input type="date" class="form-control me-2" name="pickdate">
+<select name="returntime" id="time-select" class="form-select">
+  <!-- 12 AM to 11:45 PM in 15-minute intervals -->
+  <!-- Loop in 15-minute increments -->
+  <option value="12:00 AM">12:00 A.M.</option>
+  <option value="12:15 AM">12:15 A.M.</option>
+  <option value="12:30 AM">12:30 A.M.</option>
+  <option value="12:45 AM">12:45 A.M.</option>
+  <option value="1:00 AM">1:00 A.M.</option>
+  <option value="1:15 AM">1:15 A.M.</option>
+  <option value="1:30 AM">1:30 A.M.</option>
+  <option value="1:45 AM">1:45 A.M.</option>
+  <option value="2:00 AM">2:00 A.M.</option>
+  <option value="2:15 AM">2:15 A.M.</option>
+  <option value="2:30 AM">2:30 A.M.</option>
+  <option value="2:45 AM">2:45 A.M.</option>
+  <option value="3:00 AM">3:00 A.M.</option>
+  <option value="3:15 AM">3:15 A.M.</option>
+  <option value="3:30 AM">3:30 A.M.</option>
+  <option value="3:45 AM">3:45 A.M.</option>
+  <option value="4:00 AM">4:00 A.M.</option>
+  <option value="4:15 AM">4:15 A.M.</option>
+  <option value="4:30 AM">4:30 A.M.</option>
+  <option value="4:45 AM">4:45 A.M.</option>
+  <option value="5:00 AM">5:00 A.M.</option>
+  <option value="5:15 AM">5:15 A.M.</option>
+  <option value="5:30 AM">5:30 A.M.</option>
+  <option value="5:45 AM">5:45 A.M.</option>
+  <option value="6:00 AM">6:00 A.M.</option>
+  <option value="6:15 AM">6:15 A.M.</option>
+  <option value="6:30 AM">6:30 A.M.</option>
+  <option value="6:45 AM">6:45 A.M.</option>
+  <option value="7:00 AM">7:00 A.M.</option>
+  <option value="7:15 AM">7:15 A.M.</option>
+  <option value="7:30 AM">7:30 A.M.</option>
+  <option value="7:45 AM">7:45 A.M.</option>
+  <option value="8:00 AM">8:00 A.M.</option>
+  <option value="8:15 AM">8:15 A.M.</option>
+  <option value="8:30 AM">8:30 A.M.</option>
+  <option value="8:45 AM">8:45 A.M.</option>
+  <option value="9:00 AM">9:00 A.M.</option>
+  <option value="9:15 AM">9:15 A.M.</option>
+  <option value="9:30 AM">9:30 A.M.</option>
+  <option value="9:45 AM">9:45 A.M.</option>
+  <option value="10:00 AM">10:00 A.M.</option>
+  <option value="10:15 AM">10:15 A.M.</option>
+  <option value="10:30 AM">10:30 A.M.</option>
+  <option value="10:45 AM">10:45 A.M.</option>
+  <option value="11:00 AM">11:00 A.M.</option>
+  <option value="11:15 AM">11:15 A.M.</option>
+  <option value="11:30 AM">11:30 A.M.</option>
+  <option value="11:45 AM">11:45 A.M.</option>
+  <option value="12:00 PM">12:00 P.M.</option>
+  <option value="12:15 PM">12:15 P.M.</option>
+  <option value="12:30 PM">12:30 P.M.</option>
+  <option value="12:45 PM">12:45 P.M.</option>
+  <option value="1:00 PM">1:00 P.M.</option>
+  <option value="1:15 PM">1:15 P.M.</option>
+  <option value="1:30 PM">1:30 P.M.</option>
+  <option value="1:45 PM">1:45 P.M.</option>
+  <option value="2:00 PM">2:00 P.M.</option>
+  <option value="2:15 PM">2:15 P.M.</option>
+  <option value="2:30 PM">2:30 P.M.</option>
+  <option value="2:45 PM">2:45 P.M.</option>
+  <option value="3:00 PM">3:00 P.M.</option>
+  <option value="3:15 PM">3:15 P.M.</option>
+  <option value="3:30 PM">3:30 P.M.</option>
+  <option value="3:45 PM">3:45 P.M.</option>
+  <option value="4:00 PM">4:00 P.M.</option>
+  <option value="4:15 PM">4:15 P.M.</option>
+  <option value="4:30 PM">4:30 P.M.</option>
+  <option value="4:45 PM">4:45 P.M.</option>
+  <option value="5:00 PM">5:00 P.M.</option>
+  <option value="5:15 PM">5:15 P.M.</option>
+  <option value="5:30 PM">5:30 P.M.</option>
+  <option value="5:45 PM">5:45 P.M.</option>
+  <option value="6:00 PM">6:00 P.M.</option>
+  <option value="6:15 PM">6:15 P.M.</option>
+  <option value="6:30 PM">6:30 P.M.</option>
+  <option value="6:45 PM">6:45 P.M.</option>
+  <option value="7:00 PM">7:00 P.M.</option>
+  <option value="7:15 PM">7:15 P.M.</option>
+  <option value="7:30 PM">7:30 P.M.</option>
+  <option value="7:45 PM">7:45 P.M.</option>
+  <option value="8:00 PM">8:00 P.M.</option>
+  <option value="8:15 PM">8:15 P.M.</option>
+  <option value="8:30 PM">8:30 P.M.</option>
+  <option value="8:45 PM">8:45 P.M.</option>
+  <option value="9:00 PM">9:00 P.M.</option>
+  <option value="9:15 PM">9:15 P.M.</option>
+  <option value="9:30 PM">9:30 P.M.</option>
+  <option value="9:45 PM">9:45 P.M.</option>
+  <option value="10:00 PM">10:00 P.M.</option>
+  <option value="10:15 PM">10:15 P.M.</option>
+  <option value="10:30 PM">10:30 P.M.</option>
+  <option value="10:45 PM">10:45 P.M.</option>
+  <option value="11:00 PM">11:00 P.M.</option>
+  <option value="11:15 PM">11:15 P.M.</option>
+  <option value="11:30 PM">11:30 P.M.</option>
+  <option value="11:45 PM">11:45 P.M.</option>
+</select>
+        </div>
+
+        <input type="date" class="form-control mb-3" placeholder="Return Date" name="droptime">
+        <button class="btn btn-warning w-100" name="btnAdd">Submit</button>
+</form>
+
+        <p class="mt-2 text-center text-secondary">Best prices guaranteed • 24/7 customer support • Verified drivers</p>
+      </div>
+
+
+
+</div>       
+
+
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Floating WhatsApp Button -->
+  <!-- Call Button -->
+<a href="tel:+919965109712
+" class="btn btn-primary rounded-circle call-float me-2">
+  <i class="bi bi-telephone-fill fs-3"></i>
+</a>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919965109712
+" target="_blank" class="btn btn-success rounded-circle whatsapp-float">
+  <i class="bi bi-whatsapp fs-3"></i>
+</a>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 🔹 Welcome Section -->
+<section class="py-5" style="background-color: #f5f9ff;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="color: #001f54;">Welcome to RANIAMMA TRAVELS
+</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/section.png" class="img-thumbnail h-25 rounded shadow" alt="Travellers with car" height="500px" >
+      </div>
+      <div class="col-md-6">
+        <p class="mb-3">
+          RANIAMMA TRAVELS
+ has been providing exceptional travel experiences for over a decade. We are committed to delivering top-notch services to our customers, ensuring their journeys are safe, comfortable, and memorable.
+        </p>
+        <p class="mb-3">
+          Our fleet of vehicles is well-maintained, and we offer a wide range of travel solutions to suit your needs. Whether it’s for business, leisure, or family vacations, RANIAMMA TRAVELS
+ has got you covered.
+        </p>
+        <p class="mb-4">
+          With a focus on exceptional customer service and a passion for travel, we aim to make every trip not just a vacation, but a cherished memory.
+        </p>
+        <a href="#contact" class="btn btn-warning rounded-pill px-4 py-2 shadow fw-bold">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--service-->
+<section class="why-choose-section py-5 text-center text-white" id="sevices">
+  <div class="container">
+    <h2 class="fw-bold text-warning mb-2">Our Services</h2>
+    <p class="lead mb-5 text-white">Enhance your tech life with expert computer repairs, mobile service solutions, and easy-to-use billing software for businesses.</p>
+
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <i class="bi bi-laptop display-4 text-primary"></i>
+          <a class="fw-bold text-dark mt-3 fs-5 "href="forms.php" style="cursor: pointer;">Computer Service</a>
+<p class="text-muted mb-0">
+We offer fast and affordable computer repair services, hardware upgrades, software troubleshooting, virus removal, and expert support for all brands with doorstep assistance.
+</p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <i class="bi bi-phone display-4 text-warning"></i>
+ <a class="fw-bold text-dark mt-3 fs-5 " href="forms.php" style="cursor: pointer;">Mobile Service</a>
+
+<p class="text-muted mb-0">
+Your trusted mobile service center for screen replacement, battery issues, software updates, water damage recovery, and mobile accessories — fast, reliable, and budget-friendly solutions.
+</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3">
+            <i class="bi bi-receipt display-4 text-danger"></i>
+             <a class="fw-bold text-dark mt-3 fs-5 " href="forms.php" style="cursor: pointer;">Billing Software</a>
+
+<p class="text-muted mb-0">
+Simplify your business with our billing software — manage invoices, inventory, GST, reports, and payments easily. User-friendly interface with reliable support for all industries.
+</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Popular Packages Section -->
+<section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" style="background: linear-gradient(to right, #4facfe, #00f2fe); color: #ffd700; border-radius: 30px; padding: 10px;">Our Popular Packages</h2>
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm">
+          <div class="position-relative">
+            <img src="img/card1.png" class="card-img-top" alt="Madurai" height="230px">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SPECIAL OFFER</span>
+            <div class="card-img-overlay text-white d-flex justify-content-between align-items-end">
+              <div><i class="bi bi-geo-alt-fill"></i> Madurai</div>
+              <div>&#8377;750 <i class="bi bi-person-fill"></i></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Madurai Sightseeing <i class="bi bi-truck"></i></h5>
+            <p class="mb-2 text-warning">
+              ★★★★☆ <span class="text-dark">( Top Rating )</span>
+            </p>
+            <div class="mb-3 d-flex gap-2 flex-wrap">
+              <span class="badge bg-light text-dark border">1 Day</span>
+              <span class="badge bg-light text-dark border">AC Vehicle only</span>
+              <span class="badge bg-light text-dark border">A complete guidence</span>
+            </div>
+            <a href="#" class="btn btn-dark w-100 mb-2">More Details <i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm">
+          <div class="position-relative">
+            <img src="img/card2.png" class="card-img-top" alt="Kodaikanal">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SPECIAL OFFER</span>
+            <div class="card-img-overlay text-white d-flex justify-content-between align-items-end">
+              <div><i class="bi bi-geo-alt-fill"></i> Kodaikanal</div>
+              <div>&#8377;1300 <i class="bi bi-person-fill"></i></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Madurai to Kodaikanal <i class="bi bi-truck"></i></h5>
+            <p class="mb-2 text-warning">
+              ★★★★★ <span class="text-dark">( Top Rating )</span>
+            </p>
+            <div class="mb-3 d-flex gap-2 flex-wrap">
+              <span class="badge bg-light text-dark border">1 Day</span>
+              <span class="badge bg-light text-dark border">AC Vehicle only</span>
+              <span class="badge bg-light text-dark border">A complete guidence</span>
+            </div>
+            <a href="#" class="btn btn-dark w-100 mb-2">More Details <i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm">
+          <div class="position-relative">
+            <img src="img/card3.png" class="card-img-top" alt="Rameshwaram">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SPECIAL OFFER</span>
+            <div class="card-img-overlay text-white d-flex justify-content-between align-items-end">
+              <div><i class="bi bi-geo-alt-fill"></i> Rameshwaram</div>
+              <div>&#8377;1400 <i class="bi bi-person-fill"></i></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Madurai to Rameshwaram <i class="bi bi-truck"></i></h5>
+            <p class="mb-2 text-warning">
+              ★★★★☆ <span class="text-dark">( Top Rating )</span>
+            </p>
+            <div class="mb-3 d-flex gap-2 flex-wrap">
+              <span class="badge bg-light text-dark border">1 Day</span>
+              <span class="badge bg-light text-dark border">AC Vehicle only</span>
+              <span class="badge bg-light text-dark border">A complete guidence</span>
+            </div>
+            <a href="#" class="btn btn-dark w-100 mb-2">More Details <i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 🔹 Travel Packages Grid Section -->
+<section class="py-5" style="background-color: #ffffff;" id="service">
+  <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="background: linear-gradient(to right, #4facfe, #00f2fe); color: #ffd700; border-radius: 30px; padding: 10px;">Our Private Packages</h2>
+
+    <div class="row g-4">
+
+      <!-- Single Card Template -->
+ 
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai Sightseeing <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 3000
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+  <span class="badge bg-light border text-black">1 D</span>
+  <span class="badge bg-light border text-black">-</span>
+  <span class="badge bg-light border text-black">AC</span>
+  <span class="badge bg-light border text-black">Complete guidance</span>
+</div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <!-- Copy and Edit Cards Below for Each Package -->
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Kodaikanal <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 5000
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">2 D - 1 N</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Rameshwaram <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 6000
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">2 D - 1 N</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Palani <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 4500
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Trichy <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 5100
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Thiruchendur <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 6000
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <!-- 🔹 Final Row -->
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Munnar <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 8700
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Thekkady <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 7900
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-warning shadow-sm p-3">
+          <h5 class="fw-bold">Madurai to Kanyakumari <i class="bi bi-truck"></i></h5>
+          <p class="mb-1 text-warning">★★★★☆ <span class="text-secondary">( Top Rating )</span></p>
+          <p class="text-success fw-bold">
+            <i class="bi bi-person-circle"></i> Package starting from ₹ 8700
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light border">1 D</span>
+            <span class="badge bg-light border">-</span>
+            <span class="badge bg-light border">AC</span>
+            <span class="badge bg-light border">Complete guidance</span>
+          </div>
+          <a href="#" class="btn btn-dark w-100 mb-2 fw-bold">View Details →</a>
+          <a href="#" class="btn btn-warning w-100 fw-bold">BOOK NOW</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--vehicle-->
+<section class="py-5 bg-light" id="tariff">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Vehicle Tariff</h2>
+    <div class="row g-4">
+
+      <!-- Vehicle Card Start -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-primary h-100">
+          <div class="bg-warning text-center py-2">
+            <h5 class="fw-bold m-0">SEDAN</h5>
+          </div>
+          <div class="text-center my-3">
+            <img src="img/car1.png" alt="Sedan" class="img-fluid" style="height: 160px;">
+          </div>
+          <div class="d-flex justify-content-around px-3 py-2 bg-warning-subtle fw-bold">
+            <span>ABOVE 300 KM</span>
+            <span>BELOW 300 KM</span>
+          </div>
+          <div class="row px-3 py-2">
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Per km - Rs.13</p>
+              <p><i class="bi bi-person-fill"></i> 4+1</p>
+              <p><i class="bi bi-cash-coin"></i> Driver Bata – Rs.400</p>
+            </div>
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Fuel cost/km – Rs.10</p>
+              <p><i class="bi bi-person-fill"></i> 4+1</p>
+              <p><i class="bi bi-cash-coin"></i> Rent / day – Rs.1600</p>
+            </div>
+          </div>
+          <p class="text-center text-muted bg-body-tertiary p-2 small">Toll, Parking, Hills Station Charges Extra.</p>
+          <div class="text-center">
+            <a href="#" class="btn btn-dark w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INNOVA -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-primary h-100">
+          <div class="bg-warning text-center py-2">
+            <h5 class="fw-bold m-0">INNOVA</h5>
+          </div>
+          <div class="text-center my-3">
+            <img src="img/car2.png" alt="Innova" class="img-fluid" style="height: 160px;">
+          </div>
+          <div class="d-flex justify-content-around px-3 py-2 bg-warning-subtle fw-bold">
+            <span>ABOVE 300 KM</span>
+            <span>BELOW 300 KM</span>
+          </div>
+          <div class="row px-3 py-2">
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Per km - Rs.18</p>
+              <p><i class="bi bi-person-fill"></i> 6+1</p>
+              <p><i class="bi bi-cash-coin"></i> Driver Bata – Rs.500</p>
+            </div>
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Fuel cost/km – Rs.12</p>
+              <p><i class="bi bi-person-fill"></i> 6+1</p>
+              <p><i class="bi bi-cash-coin"></i> Rent / day – Rs.2200</p>
+            </div>
+          </div>
+          <p class="text-center text-muted bg-body-tertiary p-2 small">Toll, Parking, Hills Station Charges Extra.</p>
+          <div class="text-center">
+            <a href="#" class="btn btn-dark w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INNOVA CRYSTA -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-primary h-100">
+          <div class="bg-warning text-center py-2">
+            <h5 class="fw-bold m-0">INNOVA CRYSTA</h5>
+          </div>
+          <div class="text-center my-3">
+            <img src="img/car3.png" alt="Innova Crysta" class="img-fluid" style="height: 160px;">
+          </div>
+          <div class="d-flex justify-content-around px-3 py-2 bg-warning-subtle fw-bold">
+            <span>ABOVE 300 KM</span>
+            <span>BELOW 300 KM</span>
+          </div>
+          <div class="row px-3 py-2">
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Per km - Rs.21</p>
+              <p><i class="bi bi-person-fill"></i> 6+1</p>
+              <p><i class="bi bi-cash-coin"></i> Driver Bata – Rs.500</p>
+            </div>
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Fuel cost/km – Rs.14</p>
+              <p><i class="bi bi-person-fill"></i> 6+1</p>
+              <p><i class="bi bi-cash-coin"></i> Rent / day – Rs.2400</p>
+            </div>
+          </div>
+          <p class="text-center text-muted bg-body-tertiary p-2 small">Toll, Parking, Hills Station Charges Extra.</p>
+          <div class="text-center">
+            <a href="#" class="btn btn-dark w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPO TRAVELLER -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-primary h-100">
+          <div class="bg-warning text-center py-2">
+            <h5 class="fw-bold m-0">TEMPO TRAVELLER</h5>
+          </div>
+          <div class="text-center my-3">
+            <img src="img/car4.png" alt="Tempo Traveller" class="img-fluid" style="height: 160px;">
+          </div>
+          <div class="d-flex justify-content-around px-3 py-2 bg-warning-subtle fw-bold">
+            <span>ABOVE 300 KM</span>
+            <span>BELOW 300 KM</span>
+          </div>
+          <div class="row px-3 py-2">
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Per km - Rs.26</p>
+              <p><i class="bi bi-person-fill"></i> 12+1</p>
+              <p><i class="bi bi-cash-coin"></i> Driver Bata – Rs.600</p>
+            </div>
+            <div class="col-6">
+              <p><i class="bi bi-signpost-2-fill"></i> Fuel cost/km – Rs.16</p>
+              <p><i class="bi bi-person-fill"></i> 12+1</p>
+              <p><i class="bi bi-cash-coin"></i> Rent / day – Rs.3000</p>
+            </div>
+          </div>
+          <p class="text-center text-muted bg-body-tertiary p-2 small">Toll, Parking, Hills Station Charges Extra.</p>
+          <div class="text-center">
+            <a href="#" class="btn btn-dark w-100 fw-bold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="why-choose-section py-5 text-center text-white">
+  <div class="container">
+    <h2 class="fw-bold text-warning mb-2">Why Choose Us?</h2>
+    <p class="lead mb-5 text-white">Discover what makes us the best choice for your next adventure!</p>
+    
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <i class="bi bi-globe2 display-4 text-primary"></i>
+          <h5 class="fw-bold text-dark mt-3">Experienced Guides</h5>
+          <p class="text-muted mb-0">Our guides have years of experience and local knowledge, ensuring you get the most out of your tour.</p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <i class="bi bi-cash-coin display-4 text-warning"></i>
+          <h5 class="fw-bold text-dark mt-3">Affordable Packages</h5>
+          <p class="text-muted mb-0">We offer competitive pricing and flexible payment options to make your dream vacation a reality.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+            <i class="bi bi-bag display-4 text-danger"></i>
+          <h5 class="fw-bold text-dark mt-3">Customizable Tours</h5>
+          <p class="text-muted mb-0">Personalize your experience by choosing from a variety of destinations, activities, and accommodations.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <i class="bi bi-telephone-outbound display-4 text-pink"></i>
+          <h5 class="fw-bold text-dark mt-3">24/7 Support</h5>
+          <p class="text-muted mb-0">We provide around-the-clock assistance to ensure your trip goes smoothly from start to finish.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonial-section py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-5 text-dark" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">Testimonial</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <!-- Card 1 -->
+        <div class="carousel-item active">
+          <div class="card p-4 border-0 shadow-sm mx-auto" style="max-width: 600px;">
+            <div class="circle-icon mx-auto mb-3">
+              <i class="bi bi-quote display-4 text-dark"></i>
+            </div>
+            <h5 class="fw-bold text-primary">Karthikeyan</h5>
+            <p class="text-muted">"I recently booked a tour package with RANIAMMA TRAVELS
+ for Madurai to Kodaikanal, and I must say, it was an unforgettable experience! The team was very professional and attentive, ensuring all our needs were met."</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="carousel-item">
+          <div class="card p-4 border-0 shadow-sm mx-auto" style="max-width: 600px;">
+            <div class="circle-icon mx-auto mb-3">
+              <i class="bi bi-quote display-4 text-dark"></i>
+            </div>
+            <h5 class="fw-bold text-primary">Naveen Kumar</h5>
+            <p class="text-muted">"I signed up for a trip to Kodaikanal, and it was absolutely magical! Misty hills and greenery made the journey incredible. RANIAMMA TRAVELS
+ made it smooth and worry-free."</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="carousel-item">
+          <div class="card p-4 border-0 shadow-sm mx-auto" style="max-width: 600px;">
+            <div class="circle-icon mx-auto mb-3">
+              <i class="bi bi-quote display-4 text-dark"></i>
+            </div>
+            <h5 class="fw-bold text-primary">Aananthi</h5>
+            <p class="text-muted">"I organized a spiritual trip to Rameshwaram with RANIAMMA TRAVELS
+ and everything went seamlessly. We could focus fully on the spiritual experience without any worries."</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-warning rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-warning rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-dark rounded-circle" aria-current="true" style="width: 10px; height: 10px;"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-dark rounded-circle" style="width: 10px; height: 10px;"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="bg-dark rounded-circle" style="width: 10px; height: 10px;"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-section text-white pt-5" id="contact">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Brand Column -->
+      <div class="col-md-4 mb-4">
+        <h2 class="fw-bold text-warning">RANIAMMA TRAVELS
+</h2>
+        <p class="small">Where Every Mile Becomes a Memory</p>
+      </div>
+
+
+      <!-- Quick Links -->
+<div class="col-md-2 mb-4">
+  <h5 class="text-warning fw-bold">Quick Links</h5>
+  <ul class="list-unstyled">
+    <li><a href="#" class="footer-link"><i class="bi bi-house-door-fill me-2"></i>Home Page</a></li>
+    <li><a href="#" class="footer-link"><i class="bi bi-telephone-fill me-2"></i>Services Page</a></li>
+    <li><a href="#" class="footer-link"><i class="bi bi-telephone-fill me-2"></i>Contact Page</a></li>
+  </ul>
+</div>
+
+<!-- Services -->
+<div class="col-md-3 mb-4">
+  <h5 class="text-warning fw-bold">Our Services</h5>
+  <ul class="list-unstyled">
+    <li><a href="#" class="footer-link"><i class="bi bi-diamond-fill text-warning me-2"></i>Tour Packages</a></li>
+    <li><a href="#" class="footer-link"><i class="bi bi-diamond-fill text-warning me-2"></i>Destination</a></li>
+    <li><a href="#" class="footer-link"><i class="bi bi-diamond-fill text-warning me-2"></i>One Day Trip</a></li>
+  </ul>
+</div>
+
+      <!-- Address -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-warning fw-bold">Address</h5>
+        <p class="small"> S.Ashok, Near 10 Periyar Bustand Railway Colony Madurai, Tamil Nadu 625016 India.</p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pt-3 border-top mt-4">
+      <p class="mb-0 small">
+        <span class="text-info">© 2025</span> RANIAMMA TRAVELS
+. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
