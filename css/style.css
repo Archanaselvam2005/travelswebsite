@@ -141,7 +141,7 @@ background: #0d1b4c url('img/image.png') center/cover no-repeat;
 }
  @media (max-width: 996px) {
 .hero{
-    height: 120vh;
+    height: 150vh;
 }
   
   }
